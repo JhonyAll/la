@@ -4,14 +4,16 @@ import { useState } from "react";
 import { PiEye, PiEyeSlash } from "react-icons/pi";
 import InputComponent from "@/components/Input";
 import ButtonComponent from "@/components/Button";
+import Logo from '@/assets/img/2ncC1dvurR3fJhMX4i6Lz9ICt1X.svg'
 import Link from "next/link";
+import Image from 'next/image'
 
 const Login = () => {
   const [reveledPassword, setReveledPassword] = useState(false);
 
   return (
-    <div className="w-100 h-100">
-      <form className="bg-gray-100 text-gray-800 w-full h-full px-14 py-32 rounded-lg shadow-lg flex flex-col justify-center align-center gap-20 dark:bg-gray-900 dark:text-gray-50 dark:shadow-xl 2xl:w-4/12 xl:w-6/12 lg:w-6/12 lg:max-h-[40rem] md:w-3/5 md:max-h-[40rem]">
+    <div className="w-screen h-max-screen h-screen flex justify-center items-center">
+      <form className=" border border-gray-300 bg-gray-100 text-gray-800 w-full h-full px-14 py-32 rounded-md shadow-md flex flex-col justify-center align-center gap-20 dark:bg-gray-900 dark:text-gray-50 dark:shadow-xl 2xl:w-4/12 xl:w-6/12 lg:w-6/12 lg:max-h-[40rem] md:w-3/5 md:max-h-[40rem]">
         <h1 className="text-4xl font-bold text-center">Logar</h1>
         <div className="text-zinc-700 flex flex-col gap-6">
           <div className="w-full h-14 relative">
